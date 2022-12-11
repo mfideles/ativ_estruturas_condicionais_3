@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe18</title>
+</head>
+<body>
+    <!-- 
+
+     -->
+    <script>
+        let price = parseFloat(prompt('Digite o preço da compra:'))
+        let valorParcela = parseInt(prompt('Digite a quantidade de parcelas'))
+
+        if (valorParcela ==1)
+        {
+         price= price-(price/100 * 2.5) 
+         document.write('O valor a ser pago é: ' + price)
+        }
+        else if (valorParcela>=2 && valorParcela<=5)
+        {
+            document.write('O valor a ser pago é: ' + price)
+        }
+        else if (valorParcela>=6 && valorParcela<=10)
+        {
+            price = price + (price/100*6)
+            document.write('O valor a ser pago é: ' + price)
+        }
+        else if (valorParcela>=11 && valorParcela<=15)
+        {
+            price = price + (price/100*13)
+            document.write('O valor a ser pago é: ' + price)
+        }
+        else
+        {
+            console.log('Digite um valor válido:')
+        }
+    </script>
+</body>
+</html>

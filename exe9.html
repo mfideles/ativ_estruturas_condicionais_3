@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe9</title>
+</head>
+<body>
+    <!--
+        9. Informe um valor a uma variável e imprima no console se o número
+é primo.
+    -->
+    <script>
+        let num = Number.parseInt(prompt('Digite um número:'))
+        let primo = true 
+        {
+            for (let i=2; i<num; i++)
+            if (num % i === 0) 
+            {
+            primo = false;
+            break
+            }
+        }
+        if(primo==true)
+        {
+            console.log('É primo!')
+        }
+        else
+        {
+            console.log('Não é primo!')
+        }
+        
+    </script>
+</body>
+</html>

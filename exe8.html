@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe8</title>
+</head>
+<body>
+    <!--
+        8. Crie uma variável para armazenar o salário do usuário e atribua um
+valor a essa variável. Crie a validação necessária:
+- Caso o salário seja MENOR que R$ 1.903,98, insira no html
+"ISENTO DE IR";
+- caso contrário insira "TRIBUTADO NO IR".
+    -->
+    <script>
+        let salario = Number.parseFloat(prompt('Digite o salário: '))
+
+        if (salario <=1903.98) 
+        {
+            document.write('Isento de IR')            
+        } else 
+        {
+            document.write('Tributado no IR')
+        }
+    </script>
+</body>
+</html>
